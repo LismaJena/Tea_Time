@@ -1,0 +1,158 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+<title>Tea Time</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- fonts  -->
+<link href="//fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">
+<!-- /fonts -->
+<!-- css -->
+<link href="css/style.css" rel='stylesheet' type='text/css' media="all" /> 
+<!-- /css -->
+</head>
+<body>
+
+<h1 class="header-agileits w3layouts w3 w3l w3ls">Tea Time</h1>
+         <div class="content-w3ls agileits agileinfo wthree">
+	  <form  name="myform" action="mail.php" method="post" onsubmit="validate()" >
+		
+                 <div class="form-wthree1 agileits agileinfo wthree">
+		
+			<div class="form-control"> 
+				<label class="header">First Name</label>
+                                <input type="text" id="firstname" name="firstname" placeholder="Your First Name" title="Please enter your First Name" required="">
+			</div>
+			
+			<div class="form-control">	
+				<label class="header">Email Address</label>
+				<input type="email" id="email" name="email" placeholder="Mail@example.com" title="Please enter a Valid Email Address" required="">
+			</div>
+			
+			<div class="form-control">	
+				<label class="header">Phone Number</label>	
+				<input type="tel" id="usrtel1" name="usrtel1" placeholder="+??" title="Please enter Your Phone Number" maxlength="4" required="">
+				<input type="tel" id="usrtel2" name="usrtel2" placeholder="????????" title="Please enter Your Phone Number" required="">
+			</div>
+		
+		</div>
+		
+		<div class="form-wthree2 w3-agileits agileits-w3layouts agile">
+			
+			<div class="form-control"> 
+				<label class="header">Last Name</label>
+				<input type="text" id="lastname" name="lastname" placeholder="Your Last Name" title="Please enter your Last Name" required="">
+			</div>
+		
+		</div>
+
+		<div class="clear"></div>
+
+                
+		<div class="form-wthree1 agileits agileinfo wthree">
+
+		<div class="form-control"> 
+			<label class="header">Organisation</label>
+			<input type="text" id="organisation" name="organisation" placeholder="Your Organisation" title="Please enter your organisation name" required="">
+		</div>
+			
+		<div class="form-control"> 
+			<label class="header">Designation</label>
+			<input type="text" id="designation" name="designation" placeholder="Your Designation" title="Please enter Your Designation" required="">
+		</div>
+       
+		<div class="form-wthree1 agileits agileinfo wthree">
+		
+                <div class="form-control">
+				<label class="header">No of Cups</label>
+				<select>
+					<option value="10" selected>10</option>
+					<option value="20">20</option>
+					<option value="30">30</option>
+					<option value="40">40</option>
+					<option value="50">50</option>
+                                        <option value="60">60</option>
+					<option value="70">70</option>
+					<option value="80">80</option>
+					<option value="90">90</option>
+					<option value="100">100</option>
+				</select>
+	      
+			
+		</div>
+                </div>
+		
+		<div class="form-wthree2 w3-agileits agileits-w3layouts agile">
+			<div class="form-control"> 
+				<label class="header">Delivery Time</label>
+				<input type="datetime-local" id="time" name="state" placeholder="" title="" required="">
+		</div>
+               </div>
+		
+	     </div>
+        
+		<div class="clear"></div>
+		
+		<div class="form-control last">
+			<input type="submit" class="register" value="Place Order">
+			<input type="reset" class="reset" value="Reset">
+			<div class="clear"></div>
+		</div>	
+	</form>
+</div>
+</body>
+</html>
+
+<script>
+function validate()
+{
+
+            if (document.myform.firstname.value == "") {
+                alert("Please fill out this field !");
+                document.myform.firstname.focus();
+                return false;
+            }
+             if (document.myform.lastname.value == "") {
+                alert("Please fill out this field !");
+                document.myform.lastname.focus();
+                return false;
+            }
+              if (document.myform.email.value == "") {
+                alert("Please fill out this field !");
+                document.myform.email.focus();
+                return false;
+            }
+            if (document.myform.usrtel1.value == "") {
+                alert("Please fill out this field !");
+                document.myform.usrtel1.focus();
+                return false;
+            }
+             if (document.myform.usrtel2.value == "") {
+                alert("Please fill out this field !");
+                document.myform.usrtel2.focus();
+                return false;
+            }
+               if (document.myform.organisation.value == "") {
+                alert("Please fill out this field !");
+                document.myform.organisation.focus();
+                return false;
+            }
+           if (document.myform.designation.value == "") {
+                alert("Please fill out this field !");
+                document.myform.designation.focus();
+                return false;
+            }
+           if (document.myform.time.value == "") {
+                alert("Please fill out this field !");
+                document.myform.time.focus();
+                return false;
+            }
+     
+         alert("Your order with Tea Time has been placed successfully")
+   
+}
+</script>
+  
